@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+int resultado
+int fecha 
+cout<<"digita tu año de nacimiento"
+cin>>fecha;
+resultado=tope=fecha;
+if(resultado>=18)}
+cout<<"eres mayor de edad"
+}
+else
+{
+cout<<"eres menor";
+}
