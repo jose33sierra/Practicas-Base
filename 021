@@ -1,0 +1,47 @@
+#include <iostream>
+//se utilizara una nueva libreria, esta libreria se llama fsstream
+#include <fstream>
+using namespace std;
+class Usuario{
+public:
+string nombre;
+string apellido;
+string Usuario;
+string nusuario;
+int edad;
+void mostrarPerfil(){
+        cout << "Nombre: " << nombre << endl;
+        cout << "Apellido: " << apellido << endl;
+        cout << "Edad: " << edad << " años" << endl;
+    }
+     };
+	    int main() {
+    // Crear un objeto de la clase Usuario
+    Usuario usuario;
+  
+    cout<<"ingresa el nombre de usuario:";
+    getline (cin,usuario.nombre);
+    cout<<"ingrese el apellido";
+    getline(cin, usuario.apellido);
+     cout << "Ingrese la edad: ";
+    cin >> usuario.edad;
+    //mostrar el perfil del usuario
+    cout<<"\nPerfil del Usuario:\n";
+    usuario.mostrarPerfil();
+    //crear o abrir un archivo de texto para escribir el perfil del usuario
+    ofstream archivo("perfil_usuario.txt");
+    //verificar si el archivo se abrio correctamente
+    if(archivo.is_open()){
+    	//escribir la informacion del usuario en el archivo
+    	 archivo << "Nombre: " << usuario.nombre << endl;
+        archivo << "Apellido: " << usuario.apellido << endl;
+        archivo << "Edad: " << usuario.edad << " años" << endl;
+//cerrar el archivo 
+archivo.close();
+cout<<"\nperfil del usuario guardado en 'perfil_usuario.txt'.\n";
+
+	}else{
+		cout<<"Error al abrir el archivo.\n";
+	}
+	return 0;
+}
