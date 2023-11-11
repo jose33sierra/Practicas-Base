@@ -1,0 +1,15 @@
+#incluir <iostream>
+usando el espacio de nombres estándar
+int principal(){
+int top=2023
+resultado int;
+fecha int;
+cout<<"digita tu año de nacimiento"
+cin>>fecha;
+resultado=tope=fecha;
+int (resultado)=18>
+cout<<"eres mayor de edad"
+}
+cin>>"eres menor de edad"
+return 0;
+}
