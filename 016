@@ -1,0 +1,18 @@
+#include<stdlib.h>
+int num,num2,num3,num4,suma,resta,mult,div;
+int main(){
+printf("digita el primer numero");
+scanf(%d,num);
+printf("digita el segundo numero");
+scanf(%d,num2);
+printf("digita el tercer numero");
+scanf(%d,num3);
+printf("digita el cuarto numero"); 
+scanf(%d,num4);
+suma=num+num2+num3+num4;
+printf("la suma es",suma);
+resta=num-num2-num3-num4;
+printf("la resta es",resta);
+multiplicacion=num*num2*num3*num4;
+printf("la mult es"mult);
+}
